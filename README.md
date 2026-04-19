@@ -61,7 +61,7 @@ User → API Request → Vulnerable Endpoint → Database Query (Unsafe) → Res
 ### SQL Injection
 - ' OR '1'='1
 
-Broken Authentication
+### Broken Authentication
 - Predictable session tokens
 - No rate limiting
 
