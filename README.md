@@ -10,6 +10,8 @@ Broken authentication & weak session handling
 No input validation → exploit-ready APIs
 Sensitive data exposure scenarios
 Easily testable using Postman / Curl
+
+
 🏗️ Tech Stack
 Backend
 Python (Flask) / Node.js (Express)
@@ -18,7 +20,6 @@ SQLite / MySQL
 Testing Tools
 Postman
 Burp Suite (optional)
-📐 System Architecture
 
 User → API Request → Vulnerable Endpoint → Database Query (Unsafe) → Response (Exposed Data)
 
