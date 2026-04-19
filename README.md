@@ -32,6 +32,7 @@ This project allows developers and security enthusiasts to simulate attacks like
 
 ## 📐 System Architecture  
 User → API Request → Vulnerable Endpoint → Database Query (Unsafe) → Response (Exposed Data)
+
 ---
 
 ## 📦 API Overview  
@@ -60,7 +61,7 @@ User → API Request → Vulnerable Endpoint → Database Query (Unsafe) → Res
 ### SQL Injection
 - ' OR '1'='1
 
-###Broken Authentication
+Broken Authentication
 - Predictable session tokens
 - No rate limiting
 
