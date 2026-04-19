@@ -47,8 +47,8 @@ User → API Request → Vulnerable Endpoint → Database Query (Unsafe) → Res
 ## ⚙️ Installation & Setup  
 
 ### 1️⃣ Clone Repository  
-git clone https://github.com/your-username/vulnerable-api.git
-cd vulnerable-api
+- git clone https://github.com/your-username/vulnerable-api.git
+- cd vulnerable-api
 ### 2️⃣ Install Dependencies
 pip install -r requirements.txt
 ### 3️⃣ Run Server
