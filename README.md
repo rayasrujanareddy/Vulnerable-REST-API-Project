@@ -97,4 +97,3 @@ This project demonstrates how poorly designed APIs can be exploited and highligh
 ## 🤝 Contributors
 Raya Srujana Reddy  – Developer
 
-Open to contributions!
