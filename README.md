@@ -5,7 +5,7 @@ This project allows developers and security enthusiasts to simulate attacks like
 
 ---
 
-## 🚀 Features  
+## 🚀 Features
 
 - Multiple vulnerable endpoints (Login, User Data, Admin Access)  
 - SQL Injection simulation  
@@ -16,26 +16,27 @@ This project allows developers and security enthusiasts to simulate attacks like
 
 ---
 
-## 🏗️ Tech Stack  
+## 🏗️ Tech Stack
 
-### Backend  
+### **Backend**
 - Python (Flask) / Node.js (Express)  
 
-### Database  
+### **Database**
 - SQLite / MySQL  
 
-### Testing Tools  
+### **Testing Tools**
 - Postman  
 - Burp Suite (optional)  
 
 ---
 
-## 📐 System Architecture  
+## 📐 System Architecture
+
 User → API Request → Vulnerable Endpoint → Database Query (Unsafe) → Response (Exposed Data)
 
 ---
 
-## 📦 API Overview  
+## 📦 API Overview
 
 **Endpoints include:**
 
@@ -45,46 +46,55 @@ User → API Request → Vulnerable Endpoint → Database Query (Unsafe) → Res
 
 ---
 
-## ⚙️ Installation & Setup  
+## ⚙️ Installation & Setup
 
-### 1️⃣ Clone Repository  
-- git clone https://github.com/your-username/vulnerable-api.git
-- cd vulnerable-api
-### 2️⃣ Install Dependencies
-- pip install -r requirements.txt
-### 3️⃣ Run Server
-- python app.py
-
----
+#### **1️⃣ Clone Repository**
+```bash
+git clone https://github.com/your-username/vulnerable-api.git
+cd vulnerable-api
+```
+#### **2️⃣ Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+#### **3️⃣ Run Server**
+```bash
+python app.py
+```
+----
 
 ## 🔐 Vulnerability Demonstrations
-### SQL Injection
-- ' OR '1'='1
-
-### Broken Authentication
+SQL Injection:
+```
+' OR '1'='1
+```
+Broken Authentication 
 - Predictable session tokens
-- No rate limiting
 
----
+- No rate limiting
+  
+----
 
 ## 🚧 Future Enhancements
 - Add secure version for comparison
+
 - JWT-based authentication
+
 - Input sanitization module
+
 - Rate limiting & logging
 
 ---
-
 ## ⚠️ Disclaimer
 - This project is intentionally insecure.
 - Do NOT deploy in production.
 
 ---
-
 ## 🏁 Conclusion
-This project demonstrates how poorly designed APIs can be exploited and highlights the importance of secure coding practices.
+This project demonstrates how poorly designed APIs can be exploited and highlights the importance of secure coding practices
 
 ---
-
 ## 🤝 Contributors
-Srujana Reddy – Developer
+Raya Srujana Reddy  – Developer
+
+Open to contributions!
