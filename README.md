@@ -1,55 +1,62 @@
-Vulnerable REST API (Security Testing Project)
-📌 Overview
+🔓 Vulnerable REST API (Security Testing Lab)
 
-This project is a deliberately insecure REST API designed to demonstrate common web vulnerabilities and how attackers exploit them. Think of it as a controlled environment where you can simulate real-world attacks like SQL Injection, Broken Authentication, and Insecure Data Exposure.
-
-Instead of just learning theory, this project forces you to see how APIs break under poor security practices.
-
-⚙️ How It Works
-
-The API is built using a backend framework (Flask/Node.js depending on your implementation) and exposes multiple endpoints such as login, user data retrieval, and data submission.
-
-Each endpoint is intentionally designed with flaws:
-
-SQL Injection → Input fields directly passed into queries without sanitization
-Broken Authentication → Weak session/token handling
-No Rate Limiting → Allows brute-force attacks
-Sensitive Data Exposure → Returns raw data without masking
-
-When a user interacts with the API:
-
-Request hits endpoint
-No validation/sanitization occurs
-Database query executes directly
-Vulnerability can be exploited
-
-🧠 Key Learning Areas
-OWASP Top 10 vulnerabilities
-API security flaws in real systems
-Attack simulation techniques
-Secure coding practices (when fixed version is implemented)
-
-🛠️ Tech Stack
-Backend: Python (Flask) / Node.js (Express)
-Database: SQLite / MySQL
-Tools: Postman / Curl
-Security Testing: Burp Suite (optional)
+A deliberately insecure REST API built to demonstrate real-world web vulnerabilities and attack vectors.
+This project allows developers and security enthusiasts to simulate attacks like SQL Injection, Broken Authentication, and Data Exposure in a controlled environment.
 
 🚀 Features
-Multiple vulnerable endpoints
-Real-world attack scenarios
-Easy testing using Postman
-Extendable for adding more vulnerabilities
+Multiple vulnerable endpoints (Login, User Data, Admin Access)
+SQL Injection simulation
+Broken authentication & weak session handling
+No input validation → exploit-ready APIs
+Sensitive data exposure scenarios
+Easily testable using Postman / Curl
+🏗️ Tech Stack
+Backend
+Python (Flask) / Node.js (Express)
+Database
+SQLite / MySQL
+Testing Tools
+Postman
+Burp Suite (optional)
+📐 System Architecture
 
-▶️ How to Run
-git clone <repo>
+User → API Request → Vulnerable Endpoint → Database Query (Unsafe) → Response (Exposed Data)
+
+📦 API Overview
+
+Endpoints include:
+
+/login → vulnerable to SQL Injection
+/users → exposes sensitive user data
+/admin → weak authentication logic
+⚙️ Installation & Setup
+1️⃣ Clone Repository
+git clone https://github.com/your-username/vulnerable-api.git
 cd vulnerable-api
+2️⃣ Install Dependencies
 pip install -r requirements.txt
+3️⃣ Run Server
 python app.py
-
-Test endpoints using Postman.
-
-⚠️ Important
+🔐 Vulnerability Demonstrations
+SQL Injection
+' OR '1'='1
+Broken Authentication
+Predictable session tokens
+No rate limiting
+🚧 Future Enhancements
+Add secure version for comparison
+JWT-based authentication
+Input sanitization module
+Rate limiting & logging
+⚠️ Disclaimer
 
 This project is intentionally insecure.
-Do NOT deploy it publicly.
+Do NOT deploy in production.
+
+🏁 Conclusion
+
+This project demonstrates how poorly designed APIs can be exploited and highlights the importance of secure coding practices.
+
+🤝 Contributors
+
+Srujana Reddy – Developer
