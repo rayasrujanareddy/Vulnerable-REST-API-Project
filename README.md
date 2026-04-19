@@ -50,15 +50,16 @@ User → API Request → Vulnerable Endpoint → Database Query (Unsafe) → Res
 - git clone https://github.com/your-username/vulnerable-api.git
 - cd vulnerable-api
 ### 2️⃣ Install Dependencies
-pip install -r requirements.txt
+- pip install -r requirements.txt
 ### 3️⃣ Run Server
-python app.py
+- python app.py
 
 ---
 
 ## 🔐 Vulnerability Demonstrations
 ### SQL Injection
-' OR '1'='1
+- ' OR '1'='1
+
 ###Broken Authentication
 - Predictable session tokens
 - No rate limiting
